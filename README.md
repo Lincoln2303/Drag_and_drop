@@ -3,7 +3,7 @@ A web application that allows users to drag and drop elements on a page.
 
 ## Preview
 
-![Alt Text](img/gif_name.gif)
+![Alt Text](img/drag_n_drop.gif)
 
 ## Technologies Used
 
