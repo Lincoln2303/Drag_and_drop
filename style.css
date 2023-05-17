@@ -1,0 +1,59 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+/* I.03. We start with few adjustment in the body: */
+body {
+    background-color: steelblue;
+    /* font-family: ' Roboto', sans-serif; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* NOTE: We use "overflow" on hidden, because we don't want scroll bars to be shown by default */
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+/* I.05. Styling the class "empty": */
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px #000;
+    background-color: #fff;
+}
+
+/* I.06. Then we're styling the "fill" class: */
+.fill {
+    background-image: url('https://42xq3ujq0lk207d182i6rnw9-wpengine.netdna-ssl.com/wp-content/uploads/2013/03/image-alignment-150x150.jpg');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+/* I.07. Styling class "hold": (NOTE: This style will apply when we're holding the card) */
+.hold {
+    border: solid 5px #ccc;
+}
+
+/* I.08. This style will apply, when we're hovering on the empty box: */
+/* AFTER: We'll add our drag events with javascript (in Section II.) */
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+/* I.04. We create a media query: (NOTE: If it's under 800px, we want the body's flex-direction to be a column*/
+@media(max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+
+
